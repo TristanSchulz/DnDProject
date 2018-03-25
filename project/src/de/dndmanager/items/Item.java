@@ -1,6 +1,8 @@
 package de.dndmanager.items;
+import de.dndmanager.abilities.*;
 import java.util.ArrayList;
-abstract class Item
+
+public abstract class Item
 {
     private String name;
     private int cost;
@@ -49,8 +51,8 @@ abstract class Item
     {
     	for(int i = 0; i < modifier.size(); i++)
     	{
-    		modifier.setBase(0);
-    		modifier.setSave(0);
+    		modifier.get(i).setBase(0);
+    		modifier.get(i).setSave(0);
     	}
     	this.modifier = modifier;
     }

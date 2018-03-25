@@ -1,5 +1,5 @@
 package de.dndmanager.abilities;
-abstract class Ability
+public abstract class Ability
 {
     private AbilityType type;
     private int base;
