@@ -1,5 +1,6 @@
 package de.dndmanager.classes;
 
+import de.dndmanager.abilities.Strength;
 import de.dndmanager.dice.D12;
 
 public class Barbarian extends Class
