@@ -7,13 +7,15 @@ public abstract class Item
     private String name;
     private int cost;
     private int weight;
+    private Attrib attribute;
     private ArrayList<Ability> modifier;
 
-    public Item(String name,int cost, int weight, ArrayList<Ability>modifier)
+    public Item(String name,int cost, int weight,Attrib attribute, ArrayList<Ability>modifier)
     {
     	setName(name);
     	setCost(cost);
     	setWeight(weight);
+    	setAttribute(attribute);
     	setModifier(modifier);
     }
 
@@ -60,5 +62,13 @@ public abstract class Item
     protected ArrayList<Ability> getModifier()
     {
     	return modifier;
+    }
+
+    public Attrib getAttribute() {
+        return attribute;
+    }
+
+    public void setAttribute(Attrib attribute) {
+        this.attribute = attribute;
     }
 }
