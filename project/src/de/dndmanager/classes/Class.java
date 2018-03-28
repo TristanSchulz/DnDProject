@@ -1,4 +1,5 @@
 package de.dndmanager.classes;
+import de.dndmanager.abilities.Ability;
 import de.dndmanager.dice.*;
 
 public abstract class Class{
