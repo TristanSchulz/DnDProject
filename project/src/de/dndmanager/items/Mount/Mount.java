@@ -6,7 +6,7 @@ import de.dndmanager.items.Item;
 
 import java.util.ArrayList;
 
-public class Mount extends Item{
+public abstract class Mount extends Item{
     public Mount(String name, int cost, int weight, Attrib attribute, ArrayList<Ability> modifier) {
         super(name, cost, weight, attribute, modifier);
     }
